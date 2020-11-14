@@ -2,12 +2,11 @@ var Imap = require('imap'),
     inspect = require('util').inspect;
 
 var imap = new Imap({
-  user: 'test@dev.nucleusfarma.com',
-  password: 'test1234',
-  host: '34.66.31.229',
-  port: 143,
-  tls: true,
-//   tlsOptions: { rejectUnauthorized: false }
+  user: 'mygmailname@gmail.com',
+  password: 'mygmailpassword',
+  host: 'imap.gmail.com',
+  port: 993,
+  tls: true
 });
 
 function openInbox(cb) {
